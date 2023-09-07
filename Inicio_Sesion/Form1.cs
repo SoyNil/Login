@@ -76,7 +76,9 @@ namespace Inicio_Sesion
 
         private void regis_Click(object sender, EventArgs e)
         {
-
+            Form formulario=new RegistrarUsuario();
+            formulario.Show();
+            this.Hide();
         }
     }
 }
