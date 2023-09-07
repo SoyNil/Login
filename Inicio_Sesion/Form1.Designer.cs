@@ -117,16 +117,16 @@
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(117, 150);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 15);
+            this.label1.Size = new System.Drawing.Size(196, 15);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Ingrese su datos para continuar";
+            this.label1.Text = "Ingrese sus datos para continuar";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // regis
             // 
-            this.regis.Location = new System.Drawing.Point(129, 269);
+            this.regis.Location = new System.Drawing.Point(143, 269);
             this.regis.Name = "regis";
-            this.regis.Size = new System.Drawing.Size(149, 23);
+            this.regis.Size = new System.Drawing.Size(127, 23);
             this.regis.TabIndex = 7;
             this.regis.Text = "Registrarse";
             this.regis.UseVisualStyleBackColor = true;
