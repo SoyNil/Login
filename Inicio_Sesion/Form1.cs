@@ -58,5 +58,20 @@ namespace Inicio_Sesion
         {
             login(usuario.Text, this.contra.Text);
         }
+
+        private void bntsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
