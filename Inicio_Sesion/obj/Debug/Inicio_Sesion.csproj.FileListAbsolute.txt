@@ -10,3 +10,4 @@ D:\Nilton\Inicio_Sesion\bin\Debug\Inicio_Sesion.exe
 D:\Nilton\Inicio_Sesion\bin\Debug\Inicio_Sesion.pdb
 D:\Nilton\Inicio_Sesion\obj\Debug\Inicio_Sesion.exe
 D:\Nilton\Inicio_Sesion\obj\Debug\Inicio_Sesion.pdb
+D:\Nilton\Inicio_Sesion\obj\Debug\Inicio_Sesion.RegistrarUsuario.resources

@@ -36,6 +36,7 @@
             this.bntsalir = new System.Windows.Forms.Button();
             this.Hola = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.regis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // usuario
@@ -121,11 +122,22 @@
             this.label1.Text = "Ingrese su datos para continuar";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
+            // regis
+            // 
+            this.regis.Location = new System.Drawing.Point(129, 269);
+            this.regis.Name = "regis";
+            this.regis.Size = new System.Drawing.Size(149, 23);
+            this.regis.TabIndex = 7;
+            this.regis.Text = "Registrarse";
+            this.regis.UseVisualStyleBackColor = true;
+            this.regis.Click += new System.EventHandler(this.regis_Click);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(401, 333);
+            this.Controls.Add(this.regis);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Hola);
             this.Controls.Add(this.txtusua);
@@ -151,6 +163,7 @@
         private System.Windows.Forms.Button bntsalir;
         private System.Windows.Forms.Label Hola;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button regis;
     }
 }
 

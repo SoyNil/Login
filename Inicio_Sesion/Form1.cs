@@ -73,5 +73,10 @@ namespace Inicio_Sesion
         {
 
         }
+
+        private void regis_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
