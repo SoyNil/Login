@@ -18,9 +18,21 @@ namespace Inicio_Sesion
         {
             InitializeComponent();
         }
-        private void login()
+        private void login(string text, string text1)
         {
-            
+            SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-C0BT61P;Initial Catalog=LOGIN;Integrated Security=True");
+            cn.Open();
+            SqlCommand cm = new SqlCommand("select IDUsuario, CONTRA from SESION where IDUsuario='"+usuario.Text+"'and CONTRA='"+contra.Text+"'",cn);
+            SqlDataReader dr = cm.ExecuteReader();
+            if (dr.Read())
+            {
+                this.Hide();
+                new UsuarioCorrecto(usuario.Text).Show();
+            }
+            else
+            {
+                MessageBox.Show("Login Incorrecto", "Sistema");
+            }
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -44,29 +56,7 @@ namespace Inicio_Sesion
 
         private void btningre_Click(object sender, EventArgs e)
         {
-            SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-C0BT61P;Initial Catalog=LOGIN;Integrated Security=True");
-            cn.Open();
-            SqlCommand cm = new SqlCommand("select IDUsuario, CONTRA from SESION where IDUsuario='"+usuario.Text+"'and CONTRA='"+contra.Text+"'",cn);
-            cm.Parameters.AddWithValue("IDUsuario", usuario);
-            cm.Parameters.AddWithValue("CONTRA", contra);
-            SqlDataAdapter sda = new SqlDataAdapter(cm);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            if (dt.Rows.Count==1)
-            {
-                this.Hide();
-                if (dt.Rows[0][0].ToString() == "usuario")
-                {
-
-                }
-                //MessageBox.Show("Login Exitoso", "Sistema");
-                
-                //new UsuarioCorrecto(dt.Rows[0],IDUsuario);
-            }
-            else
-            {
-                MessageBox.Show("Login Incorrecto", "Sistema");
-            }
+            login(usuario.Text, this.contra.Text);
         }
     }
 }

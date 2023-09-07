@@ -37,18 +37,18 @@
             this.Hola.AutoSize = true;
             this.Hola.Location = new System.Drawing.Point(106, 88);
             this.Hola.Name = "Hola";
-            this.Hola.Size = new System.Drawing.Size(32, 13);
+            this.Hola.Size = new System.Drawing.Size(0, 13);
             this.Hola.TabIndex = 0;
-            this.Hola.Text = "Hola!";
             // 
             // NombrUsu
             // 
             this.NombrUsu.AutoSize = true;
-            this.NombrUsu.Location = new System.Drawing.Point(137, 162);
+            this.NombrUsu.Location = new System.Drawing.Point(106, 113);
             this.NombrUsu.Name = "NombrUsu";
-            this.NombrUsu.Size = new System.Drawing.Size(35, 13);
+            this.NombrUsu.Size = new System.Drawing.Size(154, 13);
             this.NombrUsu.TabIndex = 1;
-            this.NombrUsu.Text = "label2";
+            this.NombrUsu.Text = "Bienvenido a nuestro programa";
+            this.NombrUsu.Click += new System.EventHandler(this.NombrUsu_Click);
             // 
             // UsuarioCorrecto
             // 
@@ -59,6 +59,7 @@
             this.Controls.Add(this.Hola);
             this.Name = "UsuarioCorrecto";
             this.Text = "UsuarioCorrecto";
+            this.Load += new System.EventHandler(this.UsuarioCorrecto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
